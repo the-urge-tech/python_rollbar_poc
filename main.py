@@ -37,7 +37,8 @@ def rollbar_except_hook(exc_type, exc_value, traceback):
 
 def proof_of_concept():
     rollbar_init('poc-test')
-    sys.excepthook = rollbar_except_hook # override sys.excepthook with the custom except_hook method
+    # override sys.excepthook with the custom except_hook method
+    sys.excepthook = rollbar_except_hook
 
     a = 'c'
     b = 1
