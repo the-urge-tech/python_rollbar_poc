@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Notify deploy to Rollbar
-        uses: rollbar/github-deploy-action@2.0.0
+        uses: rollbar/github-deploy-action@2
         id: rollbar_deploy
         with:
           environment: 'production'
